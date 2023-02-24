@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./index.css" rel="stylesheet" />
+    <script type="module" src="./main.js"></script>
+    <script
+      async
+      src="https://kit.fontawesome.com/5f3c108898.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Merkle Root Generator</title>
+    <link rel="icon" type="image/x-icon" href="img/tree.ico">
+  </head>
+  <body>
+    <div class="app">
+      <div class="main-cont">
+        <h1 class="app-hero-title">Merkle Tree Root Generator</h1>
+
+        <div class="center-app">
+          <div class="app-modal">
+            
+            <div class="input-box">
+              <span class="string-array"
+                >Insert a <span class="green">string</span
+                ><span class="blue">[]</span></span
+              >
+              <img src="./img/stringarray.png" class="array-img" />
+              <input
+                type="text"
+                class="array-input"
+                placeholder="Insert an array of strings"
+              />
+              <div class="center-cta-box">
+                <button class="generate-hash">Generate Root Hash</button>
+              </div>
+            </div>
+
+            <div class="result-box hidden">
+              <h1 class="merkle-text"><span class="green">Bytes32</span> Merkle Tree Root Hash</h1>
+              <input class="result-root"></input>
+              <div class="center-cta-box2">
+                <button class="copy-root btn-stl">
+                  <i class="fa-regular fa-clone"></i> Copy
+                </button>
+              </div>
+            </div>
+
+            <div class="result-box2 hidden">
+              <h1 class="merkle-text2">Hash Against Root</h1>
+              <div class="compare-box">
+
+                <span class="purple">keccak256( </span><input class="compare-root" placeholder="Enter value to hash against the root hash"></input><span class="purple">)</span>
+              </div>
+              <div class="center-cta-box2">
+                <button class="validate-root btn-stl">
+                   Validate
+                </button>
+              </div>
+              <span class="validate-outcome"></span>
+            </div>
+          </div>
+        </div>
+        <div class="made-by-box hidden">
+          <span class="made-by">Made with &#10084;&#65039; by <a href="https://www.twitter.com/0xromrom" target="_blank"><span class="green">0xRomRom</span></a></span>
+          <span class="made-by">Feeling generous? Send me some (test) ETH :}</span>
+          <span class="made-by">0xee207af9EBA4d77d832e3139464848ce84a620d9</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
