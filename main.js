@@ -1,6 +1,3 @@
-const { MerkleTree } = require("merkletreejs");
-const keccak256 = require("keccak256");
-
 const arrayInput = document.querySelector(".array-input");
 const generateRootButton = document.querySelector(".generate-hash");
 const resultRootText = document.querySelector(".result-root");
